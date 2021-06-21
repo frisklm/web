@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS学习总结</title>
+</head>
+
+<body>
+
+    <body background="https://cdn.pixabay.com/photo/2020/12/27/12/07/sunrise-5863751_1280.png">
+        <ul>
+            <li>
+                <h2>css语法</h2>
+                <ol>
+                    <li>css主要由两部分构成：选择器和以{}包裹的声明
+                    </li>
+                    <li>每条声明由属性和其值组成，多个声明用“；”隔开</li>
+                    <li>选择器主要用class选择器，前要加“.”，id选择器前加“#”</li>
+                </ol>
+            </li>
+            <li>
+                <h2>颜色，尺寸，对齐</h2>
+                <ol>
+                    <li>颜色可以用其名称或者rgb(<span style="color: red;">xxx</span>,<span style="color: green;">xxx</span>,<span
+                            style="color: blue;">xxx</span>,每种颜色用三个字节表示
+                        </Blue>)
+                    </li>height和width设置元素内容占据的尺寸
+                    <li>对于元素中的文本，可以简单的设置text-align属性为left, center, right，缺省为左对齐</li>
+                </ol>
+            </li>
+            <li>
+                <h2>盒子模型</h2>
+                <ol>
+                    <li>Content 盒子的内容，如文本、图片等 </li>
+                    <li>Padding 填充，也叫内边距，即内容和边框之间的区域</li>
+                    <li>Border 边框，默认不显示</li>
+                    <li>Margin 外边距，边框以外与其它元素的区域</li>
+                </ol>
+            </li>
+            <li>
+                <h2>边框与边距</h2>
+                <ol>
+                    <li>无论边框、内边距还是外边距，它们都有上下左右四个方向
+                    </li>
+                    <li>简写时的顺序为上，右，下，左，或记为顺时针方向
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <h2>定位</h2>
+                <ol>
+                    <li>static 静止：默认定位方式，元素按从上往下从左往右排列</li>
+                    <li>relative 相对：把元素相对于它静止时的位置进行移动</li>
+                    <li>fixed 固定：将使得元素在浏览器的屏幕可见区域内固定不动</li>
+                    <li>absolute 绝对：将使元素相对于其最近设置了定位属性（非static）<br />的父元素进行偏移
+                        如果该元素的所有父元素都没有设置定位属性，那么就相对于body这个父元素</li>
+                </ol>
+            </li>
+            <li>
+                <h2>溢出</h2>
+                <ol>
+                    <li>overflow属性来处理这些溢出的部分。
+                    </li>
+                    <li>visible 默认值，溢出部分不被裁剪，在区域外面显示<br>
+                        hidden 裁剪溢出部分且不可见<br>
+                        scroll 裁剪溢出部分，但提供上下和左右滚动条供显示<br>
+                        auto 裁剪溢出部分，视情况提供滚动条</li>
+                </ol>
+            </li>
+            <li>
+                <h2>浮动</h2>
+                <ol>
+                    <li>可以设置float属性让某元素水平方向上向左或右进行移动,其周围的元素也会重新排列
+                    </li>
+                    <li>如果希望浮动元素后面的元素在其下方显示，可使用clear: both样式来进行清除。</li>
+                </ol>
+            </li>
+            <li>
+                <h2>不透明度</h2>
+                <ol>
+                    <li>opacity对任何元素（不过常用于图片）设置不透明度,<br>
+                        值在[0.0～1.0]之间，值越低，透明度越高
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <h2>组合选择器</h2>
+                <ol>
+                    <li>后代选择器:以空格作为分隔，如：.haha p 代表在class=haha内的所有p元素
+                    </li>
+                    <li>子代选择器(也称直接后代选择器)：以>作为分隔，如：.haha > p <br>代表在有.haha类的元素内的直接p元素。</li>
+                </ol>
+            </li>
+            <li>
+                <h2>伪类和伪元素</h2>
+                <ol>
+                    <li>
+                        伪类（pseudo-class）或伪元素（pseudo-element）用于定义元素的某种特定的状态或位置等
+                    </li>
+                    <li>
+                        使用方法：选择器后使用“:"号，再跟上某个伪类/伪元素
+                    </li>
+                </ol>
+            </li>
+        </ul>
+    </body>
+
+</html>
